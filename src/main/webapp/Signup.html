@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./sign.css">
+<style>@charset "ISO-8859-1";
+#d1{
+height: 510px;
+width: 400px;
+border: 2px solid blueviolet;
+margin: 120px;
+margin-left: 530px;
+margin-top: 150px;
+background-color:whitesmoke
+}
+body{
+    background-image: linear-gradient(pink,rgb(110, 174, 209));
+    background-size: cover;
+}
+
+input{
+    height: 20px;
+    width: 150px;
+    
+    margin-left: 25px;
+}
+h2{
+    margin-left: 90px;
+}
+
+h3{
+    margin-left: 90px;
+}
+a{
+    color: black;
+    padding-left: 10px;
+}
+label{
+	margin-left: 40px;
+}
+button{
+	margin-left: 70px;
+	width: 80px;
+	}</style>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="signup" method="post" enctype="multipart/form-data">
+    <div id="main">
+    <div id="d1">
+        <h2>Enter your Details here</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob"><br><br>
+         <label for="mob">Mobile</label>
+        <input type="number" pattern="[0-9]{10}" id="mob" name="mob" required><br><br>
+          <label for="email">Email</label>
+          
+
+<input type="text" id="email" name="email"><br><br>
+          <label for="pass">Password</label>
+        <input type="text" id="pass" name="pass"><br><br>
+          <label for="gen">Gender</label>
+          <label for="male">Male</label>
+        <input type="radio" id="male" value="male" name="gender">
+            <label for="female">Female</label>
+        <input type="radio" id="female" value="female" name="gender"><br><br>
+        
+        <label for="">Picture</label>
+        <input type="file" name="picture"><br><br>
+        <label for="coun">Country</label>
+        <select id="coun" name="coun">
+			<option >India</option>
+			<option >Switz</option>
+			<option >USA</option>
+			<option >Uganda</option>
+		</select><br><br><br>
+		<button>signup</button>
+		<button>cancel</button>
+		<h3>Already have Account?</h3>
+    </div>
+    </div>
+	</form>
+</body>
+</html>
